@@ -1,0 +1,71 @@
+/* Keyframes Start */
+
+.letf-animation {
+  animation: moveInLeft 1000ms;
+}
+
+.right-animation {
+  animation: moveInRight 1000ms;
+}
+
+.top-animation {
+  animation: moveInTop 1000ms;
+}
+
+.bottom-animation {
+  animation: moveInBottom 1000ms;
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  75% {
+    transform: translate(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes End */

@@ -1,0 +1,110 @@
+/**** Header Start ****/
+.header {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/01.jpg") no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  /*  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+
+    &-logo img {
+      width: 40%;
+    }
+
+    &-menu ul li {
+      display: inline-block;
+    }
+
+    &-menu ul li a {
+      display: block;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+      letter-spacing: 0.05rem;
+      transition: 300ms all;
+    }
+
+    &-menu ul li a:hover {
+      color: $purple-color;
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    &-heading h1 {
+      font-size: 72px;
+      letter-spacing: 0.05rem;
+    }
+    &-heading p {
+      font-size: 18px;
+      letter-spacing: 0.05rem;
+      margin-bottom: 50px;
+    }
+
+    &-heading a {
+      display: block;
+      width: 150px;
+      height: 50px;
+      background: #ffffff;
+      text-align: center;
+      line-height: 50px;
+      color: #000;
+      border-radius: 50px;
+      transition: 300ms all;
+      backface-visibility: hidden;
+      position: relative;
+    }
+
+    &-heading a:after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      position: absolute;
+      transition: 300ms all;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      border-radius: 50px;
+    }
+
+    &-heading a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    &-heading a:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    &-heading a:hover::after {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+}
+
+/**** Header End *****/

@@ -1,0 +1,14 @@
+{
+  "name": "flex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass scss/app.scss css/app.css -w"
+  },
+  "author": "omercan",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
